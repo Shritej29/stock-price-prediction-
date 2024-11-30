@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Chart customization */
+.chart-container {
+  @apply rounded-lg shadow-lg p-4 bg-white;
+  min-height: 400px;
+}
+
+/* Form elements */
+.form-input:focus {
+  @apply ring-2 ring-indigo-500 border-indigo-500;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-transform duration-200;
+}
+
+.hover-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Loading spinner */
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200;
+  border-top-color: #6366f1;
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Tab transitions */
+.tab-transition {
+  @apply transition-all duration-200;
+}
+
+.tab-active {
+  @apply border-b-2 border-indigo-600;
+}
+
+/* Currency toggle */
+.currency-toggle {
+  @apply relative inline-flex items-center cursor-pointer;
+}
+
+.currency-toggle input:checked + span {
+  @apply bg-indigo-600;
+}
+
+/* Stock news card */
+.news-card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+}
+
+/* Stock details grid */
+.details-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .chart-container {
+    min-height: 300px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-900 {
+    @apply bg-gray-900;
+  }
+  
+  .dark\:text-white {
+    @apply text-white;
+  }
+}

@@ -1,0 +1,73 @@
+# General
+.DS_Store
+Thumbs.db
+
+# Node.js (React.js)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.cache/
+dist/
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Build outputs
+build/
+coverage/
+
+# FastAPI (Python)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+
+# PyTest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pydantic auto-generated schema cache
+pydantic_schema/
+
+# PyCharm and VSCode settings (optional)
+.idea/
+.vscode/
+
+# Mac OS files
+.DS_Store
+
+# Other
+*.swp
+*.swo
+*.bak
+*.backup
